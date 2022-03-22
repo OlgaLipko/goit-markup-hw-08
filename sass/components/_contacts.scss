@@ -1,0 +1,29 @@
+.contacts__item {
+  flex-direction: row;
+  color: $color-text-lighter;
+  @include flex-center(flex);
+}
+.contacts-text {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__item + .contacts__item {
+  margin-left: 50px;
+}
+
+.link .contacts__item {
+  align-items: center;
+}
+
+.contacts__link {
+  @include flex-center(flex);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include transition(color);
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: #757575;
+}

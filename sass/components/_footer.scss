@@ -1,0 +1,97 @@
+.footer {
+  background-color: $background-color-dark;
+  flex-direction: column;
+}
+.footer-social {
+  margin-right: 93px;
+}
+.footer-social-list {
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-social__name,
+.footer-contact__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-text-contrast;
+  margin-bottom: 20px;
+}
+.footer-logo {
+  margin-right: 70px;
+  padding-right: 15.3px;
+}
+
+.footer-adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-adress__item--adress /**/ {
+  display: flex;
+  color: $color-text-contrast;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+
+.footer-contact__label {
+  margin-right: 12px;
+}
+
+.footer-contact__button {
+  background: $link-color-change;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: $color-text-contrast;
+  @include flex-center(flex);
+  letter-spacing: 0.06em;
+  padding: 10px 28px;
+  border: none;
+  fill: $color-text-contrast;
+  cursor: pointer;
+  font-family: $primary-font;
+  @include transition(background-color);
+  &:hover,
+  &:focus {
+    color: $color-text-contrast;
+    background-color: $background-hero-btn-change;
+  }
+}
+
+.footer-button__icon {
+  margin-left: 10px;
+}
+.footer-mail {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-contact__input {
+  background: $background-color-dark;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 16px;
+}
+
+.footer-contact__form {
+  display: flex;
+  align-items: flex-end;
+}

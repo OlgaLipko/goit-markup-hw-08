@@ -1,0 +1,27 @@
+.logo {
+  color: $link-color-change;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  justify-content: flex-start;
+  &-header {
+    color: $primary-text-color;
+  }
+  &-footer {
+    color: $color-text-contrast;
+  }
+}
+
+.header-nav > .logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer-logo > .logo {
+  display: block;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,29 @@
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients__item + .clients__item {
+  margin-left: 30px;
+}
+
+.clients__link {
+  @include flex-center(flex);
+  border: none;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $color-social-link;
+  box-sizing: border-box;
+  border-radius: 4px;
+  @include transition-two(border-color, fill);
+  &:hover,
+  &:focus {
+    border-color: $link-color-change;
+    fill: $link-color-change;
+  }
+}
+.clients__icon {
+  fill: $color-social-link;
+  @include transition(fill);
+}

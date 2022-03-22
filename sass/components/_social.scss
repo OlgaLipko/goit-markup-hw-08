@@ -1,0 +1,33 @@
+/*СОЦСЕТИ*/
+.social {
+  @include flex-center(flex);
+}
+
+.social__link {
+  @include flex-center(flex);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $color-social-link;
+  @include transition-two(background-color, fill);
+  &:hover,
+  &:focus {
+    background-color: $link-color-change;
+    fill: $background-color-command;
+  }
+  .footer-social-list & {
+    fill: $color-text-contrast;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    @include transition(background-color);
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+      fill: $background-color-command;
+    }
+  }
+}
+
+.social__item + .social__item {
+  margin-left: 10px;
+}

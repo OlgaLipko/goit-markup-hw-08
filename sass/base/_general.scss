@@ -1,0 +1,52 @@
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  color: $primary-text-color;
+  background: $background-color;
+  font-family: $primary-font;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /*outline: 2px dashed #188ce8;*/
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: $color-text-lighter;
+  &:hover svg,
+  &:focus svg {
+    fill: $link-color-change;
+    color: $color-text-lighter;
+  }
+}
+
+.footer-adress__item .link:hover,
+.footer-adress__item .link:focus {
+  color: $link-color-change;
+}
+
+.visually-hidden {
+  @include invisible();
+}
